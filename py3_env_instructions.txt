@@ -1,0 +1,69 @@
+
+=====================================================================================
+==========================          Requirements           ==========================
+=====================================================================================
+  LIBRARY	     VERSION
+- Python             v.3.8.8                       
+
+
+Latest stable version: 
+- numpy                    
+- matplotlib                
+- pandas                    
+- scipy                     
+- scikit-learn              
+- more-itertools            
+- joblib
+- seaborn
+- multiprocessing
+- tqdm
+- mkl
+- nibabel
+- nilearn
+- pickle
+- pathlib
+- mat73
+
+Specific version:
+- foolbox            v.2.4.0  (probably needs to be installed with pip3)                     
+- pytorch            v.1.4.0                       
+- torchvision        0.2.2                        
+
+
+=====================================================================================
+==========================          INSTALLATION           ==========================
+=====================================================================================
+
+1. Clone the Python3 environment named "py3" locacted on Joyce, using the following command ("yourclonename" should be changed to the desired environment name): 
+
+$ conda create --name yourclonename --clone /opt/anaconda/envs/py3
+ 
+
+
+2. Make sure the environment is cloned in your local space, using the following command:
+
+$ conda env list 
+
+
+
+3. Activate the your new environment, using the following command:
+
+$ conda activate yourclonename
+
+
+
+4. Install the following libraries using the following commands in order:
+
+$ conda install -c conda-forge multiprocess 
+$ pip install foolbox==2.4.0
+$ pip install mat73
+
+
+
+5. The environment is ready for use. The code for the adversarial classifier should always be used within this environment. 
+ 
+
+
+6. You can deactivate this environment using the following command:
+
+$ conda deactivate
